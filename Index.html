@@ -1,8 +1,55 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-Portfolio</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; color: #333; }
+        .container { width: 80%; margin: auto; }
+        header, .project, .contact { margin-bottom: 2rem; }
+        header { background-color: #000; color: #fff; padding: 1rem; }
+        .project { background-color: #f0f0f0; padding: 1rem; }
+        .contact { background-color: #ddd; padding: 1rem; }
+        .nav { position: fixed; top: 0; width: 100%; background: #000; color: white; padding: 1rem; text-align: center; }
+        .nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <header id="about">
+            <h1>Your Name</h1>
+            <p>Brief professional summary...</p>
+        </header>
+
+        <div id="projects">
+            <!-- Repeat this section for each project -->
+            <div class="project">
+                <h2>Project Title</h2>
+                <p>Project description...</p>
+                <!-- Placeholder for Python Code Box -->
+                <pre><code>Your Python code here...</code></pre>
+                <!-- Placeholder for Power BI Panel -->
+                <div>Power BI Panel will go here</div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <!-- Contact form fields go here -->
+                <input type="text" name="name" placeholder="Your Name"><br>
+                <input type="email" name="email" placeholder="Your Email"><br>
+                <textarea name="message" placeholder="Your Message"></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
